@@ -41,11 +41,13 @@ void loop() {
     }
     else
     {
+      int numArr[count];
       for (int i = 0; i <= count; i++)
       {
         num = random(1,5);
         if (num == 1)
         {
+          numArr(i) = blue;
           digitalWrite(blue, HIGH);
           delay(750);
           digitalWrite(blue, LOW);  
@@ -53,18 +55,21 @@ void loop() {
         }
         else if (num == 2)
         {
+          numArr(i) = red;
           digitalWrite(red, HIGH);
           delay(750);
           digitalWrite(red, LOW);
         }
         else if (num == 3)
         {
+          numArr(i) = yellow;
           digitalWrite(yellow, HIGH);
           delay(750);
           digitalWrite(yellow, LOW);
         }
         else if (num == 4)
         {
+          numArr(i) = green;
           digitalWrite(green, HIGH);
           delay(750);
           digitalWrite(green, LOW);
